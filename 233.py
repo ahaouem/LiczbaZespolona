@@ -16,7 +16,7 @@ class ComplexNumber:
         return ComplexNumber(self.x * other.x - self.y * other.y, self.x * other.y + self.y * other.x)
         
     def __lt__(self, other):
-        return math.sqrt(self.x2 + self.y**2) < math.sqrt(other.x**2 + other.y**2)
+        return math.sqrt(self.x**2 + self.y**2) < math.sqrt(other.x**2 + other.y**2)
 
     def __gt__(self, other):
         return math.sqrt(self.x**2 + self.y**2) > math.sqrt(other.x**2 + other.y**2)
